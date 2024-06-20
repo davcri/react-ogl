@@ -737,7 +737,6 @@ const events = {
         for (const entry of intersects) {
           if ((entry as unknown as any).__handlers) {
             const object = entry as Instance<OGL.Mesh>['object']
-            const handlers = object.__handlers
 
             const handlers = object.__handlers
             handlers?.onPointerMove?.({ ...object.hit, nativeEvent: event })
